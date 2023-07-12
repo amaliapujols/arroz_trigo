@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa Arroz y Trigo</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col card">
+            <img src="./images/logo.png" alt="Logo de la empresa">
+            <div class="" id="results_div"></div>
+            <div class="row">
+                <div class="input-field col">
+                    <input placeholder="Escriba la cantidad inicial de trigo" id="wheat_input" type="number" min="0" required>
+                    <label for="first_name">Cantidad de trigo</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col">
+                    <select id="day_select">
+                        <option value="" disabled selected>Seleccione...</option>
+                        <option value="1">Lunes</option>
+                        <option value="2">Martes</option>
+                        <option value="3">Miércoles</option>
+                        <option value="4">Jueves</option>
+                        <option value="5">Viernes</option>
+                        <option value="6">Sábado</option>
+                        <option value="7">Domingo</option>
+                        <option value="0">Todos</option>
+                    </select>
+                    <label>Día</label>
+                </div>
+            </div>
+            <div class="button-field">
+                <a class="waves-effect waves-light btn" onclick="calculateProduction()">Calcular</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
